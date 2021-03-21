@@ -7,15 +7,9 @@ import uglify from 'rollup-plugin-uglify';
 
 import pkg from './package.json';
 import authPkg from './auth/package.json';
-import databasePkg from './database/package.json';
-import firestorePkg from './firestore/package.json';
-import storagePkg from './storage/package.json';
 
 const pkgsByName = {
-  auth: authPkg,
-  database: databasePkg,
-  firestore: firestorePkg,
-  storage: storagePkg,
+  auth: authPkg
 };
 
 const plugins = [
@@ -29,13 +23,10 @@ const plugins = [
 const peerDependencies = pkg.peerDependencies || {};
 const external = [
   ...Object.keys(pkg.peerDependencies),
-  'firebase/auth',
-  'firebase/database',
-  'firebase/firestore',
-  'firebase/storage',
+  'firebase/auth'
 ];
 
-const components = ['auth', 'database', 'firestore', 'storage'];
+const components = ['auth'];
 
 export default components
   .map((component) => {

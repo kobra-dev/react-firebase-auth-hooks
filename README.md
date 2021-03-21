@@ -7,6 +7,10 @@ A set of reusable [React Hooks](https://reactjs.org/docs/hooks-intro.html) for [
 
 **This documentation is for v3 of React Firebase Hooks which involved a number of breaking changes, including adding support for Firebase v8.0.0 - more details [here](https://github.com/CSFrequency/react-firebase-hooks/releases/tag/v3.0.0). For v2 documentation, see [here](https://github.com/CSFrequency/react-firebase-hooks/tree/v2.2.0).**
 
+## Fork details
+
+This is a fork to remove all of the hooks except for Auth. At Kobra we only use Firebase Auth and use our own backend for everything else.
+
 ## Installation
 
 React Firebase Hooks v3 requires **React 16.8.0 or later** and **Firebase v8.0.0 or later**.
@@ -36,9 +40,6 @@ To upgrade your project from v2 to v3 check out the [Release Notes](https://gith
 ## Documentation
 
 - [Auth Hooks](/auth)
-- [Cloud Firestore Hooks](/firestore)
-- [Cloud Storage Hooks](/storage)
-- [Realtime Database Hooks](/database)
 
 ## License
 
